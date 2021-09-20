@@ -1,0 +1,5 @@
+select current_date from dual;
+select add_months(current_date,1) from dual;
+select months_between('20-dec-21','20-oct-21') from dual;
+
+select to_char(sysdate,'dd month,yyyy')from dual;

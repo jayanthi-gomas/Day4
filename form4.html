@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Registration form</title>
+       
+</head>
+<body>
+	<h1 style="text-align: center: ">REGISTRATION FORM</h1>
+ 	<ul>Registration form</ul>
+   <form>
+	Name<input type="text" id="txtNumber1" placeholder="Please enter your name" /> <br><br>
+        Number<input type="text" id="txtNumber2" placeholder="Please enter your number" /><br><br>
+	Email<input type="text" id="txtNumber3" placeholder="Please enter your Email" /><br><br>
+        <label>   
+	Gender :  
+	</label><br>  
+	<input type="radio" name="male"/> Male  
+	<input type="radio" name="female"/> Female <br>
+	 <label>   
+	Course :  
+	</label>
+	<input type="checkbox" name="IT"/> IT
+        <input type="checkbox" name="CSE"/> CSE <br><br>
+	<input type="button" value="Register"/>
+        <input type="button" value="Reset"/> 
+	<label id ="lblMessage"></label>
+
+
+   </form>
+</body>
+</html>
+<script>
+	function validation()
+	{
+	var Name = document.forms["Registrationform"]["Name"];
+	var Number = document.forms["Registrationform"]["Number"];	
+	var Email = document.forms["Registrationform"]["Email"];
+
+	if (Name.value)== " ")
+	{
+	window.alert("please enter your Name.");
+	Name.focus();
+	return false;
+	}
+
+	if (Email.value)== " ")
+	{
+	window.alert("please enter your Email.");
+	Email.focus();
+	return false;
+	}
+</script>

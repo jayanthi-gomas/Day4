@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<Medical Health Record>
+	<record>
+		<name>jayanthi gomas</name>
+		<age>14</age>
+		<height>5'2</height>
+		<weight>45</weight>
+		<disease>
+			<disease>cancer</disease>
+			<disease>corona</disease>
+		</disease>
+	</record>
+	<record>
+		<name>sharath </name>
+		<age>14</age>
+		<height>5'2</height>
+		<weight>45</weight>
+		<disease>
+			<disease>cancer</disease>
+			<disease>corona</disease>
+		</disease>
+	</record>
+</Medical Health Record>

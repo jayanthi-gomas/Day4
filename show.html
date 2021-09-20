@@ -1,0 +1,19 @@
+<html>
+<head></head>
+
+
+<body>
+	<input type="text" id="textnumber" value="5" />
+	<input type="button" value="show textnumber value" onclick="show()"/>
+        <br> <br> <br> <br>
+	<label id="lblMessage"></label>
+</body>
+
+</html>
+<script>
+function show()
+{
+	var sampleValue=document.getElementById('textnumber').value;
+	document.getElementById('lblMessage').innerHTML=sampleValue;
+}
+</script>

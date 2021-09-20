@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<student database>
+     <student>
+	<name>jayanthi gomas</name>
+	<age>14</age>
+	<roll number>T012345</roll number>
+       <subjects>
+	<subject>Maths</subject>
+       	<subject>science</subject>
+       </subjects>
+     </student>
+     <student>
+	<name>sharath ></name>
+	<age>14</age>
+	<roll number>T012346</roll number>
+       <subjects>
+	<subject>Maths</subject>
+       	<subject>science</subject>
+       </subjects>
+     </student>
+</student database>

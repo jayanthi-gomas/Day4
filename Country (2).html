@@ -1,0 +1,88 @@
+<html>
+ 
+<head>
+ 
+</head>
+ 
+<body>
+    <form>
+        <label>Country</label>
+        <br>
+        <select id="ddlCountry" onchange="BindStateDropdown()">
+            <option>Please select a country
+            </option>
+            <option>India
+            </option>
+            <option>Australia
+            </option>
+            <option>USA
+            </option>
+        </select><br><br>
+        <label>State</label>
+        <br>
+        <select id="ddlState" onchange="BindCityDropdown()">
+	   <option>Please select a state
+            </option>
+            <option>Telangana
+            </option>
+            <option>AP
+            </option>
+            <option>Karnataka
+            </option>
+        </select><br> <br>
+	 <label>City</label>
+        <br>
+        <select id="City" onchange="BindCityDropdown()">
+	   <option>Please select a City
+            </option>
+            <option>Hyderabad
+            </option>
+            <option>Vizag
+            </option>
+            <option>Banglore
+            </option>
+        </select>
+ 
+    </form>
+</body>
+ 
+</html>
+<script>
+    function BindStateDropdown() {
+        var txtCountry = document.getElementById('ddlCountry').value;
+        switch (txtCountry) {
+            case 'India':
+                document.getElementById('ddlState').innerHTML =
+                    '<option>select state</option><option>Karnataka</option>'
+                break;
+                case 'USA':
+                document.getElementById('ddlState').innerHTML =
+                    '<option>select state</option><option>AP</option>'
+                break;
+            default:
+                document.getElementById('ddlState').innerHTML = 
+		'<option>select state</option><option>karnataka</option>'
+                break;
+ 
+        }
+    }
+        function BindCityDropdown() {
+        var txtCountry = document.getElementById('ddlState').value;
+        switch (txtSate) {
+            case 'Telangana':
+                document.getElementById('ddlCity').innerHTML =
+                    '<option>select city</option><option>Hyderabad</option>'
+                break;
+                case 'AP':
+                document.getElementById('ddlCity').innerHTML =
+                    '<option>select City</option><option>vizag</option>'
+                break;
+            default:
+                document.getElementById('ddlCity').innerHTML = 
+		'<option>select City</option><option>banglore</option>'
+                break;
+ 
+        }
+        
+    }
+</script>

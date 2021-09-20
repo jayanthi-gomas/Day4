@@ -1,0 +1,24 @@
+select * from employ;
+select * from employeesalary;
+select * from employ where employeesalary between 20000 and 21000;
+select * from employ where employeename like '%Emp%';
+select * from employ where id in(1,2,3);
+select * from employ where id NOT in(1,2,3);
+ select EMPLOYEENAME || '--' ||EMPLOYEESALARY as emplnameandsal from employ;
+select * from employ where employeesalary<25000 and employeesalary>20000;
+select * from employ;
+select * from example;
+
+select distinct text from sample;
+select * from sample order by ID desc;
+
+
+select upper('sample') from dual;
+select initcap ('sample is here') from dual;
+select concat('sample is here','to add charecters') from dual;
+
+select current_date from dual;
+select add_months(current_date,1) from dual;
+select months_between('20-dec-21','20-oct-21') from dual;
+
+select to_char(sysdate,'dd month,yyyy')from dual;
